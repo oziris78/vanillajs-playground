@@ -1,0 +1,85 @@
+
+/* FOOTER PART THAT IS COPY PASTED FROM MY OTHER PROJECT */ 
+
+footer{
+    @extend %sizeMargin;
+    @extend %noSelect;
+    @extend %flexRow;
+    background-color: $beyaz2;
+    height: auto;
+    padding: 0.72rem 0 0.72rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    ul{
+        list-style: none;
+        @extend %flexRow;
+        width: 50%;
+        li{
+            width: 14%;
+        }
+    }
+    #footerText{
+        font-size: 1.2rem;
+        color: lighten($siyah, 35%);
+        transition: 0.5s;
+        width: 50%;
+        &:hover{
+            font-size: 1.5rem;
+            color: $siyah;
+        }
+    }
+}
+
+
+/* ICONS */
+
+.fa {
+    opacity: 0.8;
+    transition: 1s;
+    padding: 0.3rem;
+    width: 1.6rem;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 45%;
+}
+
+.fa:hover{
+    opacity: 1;
+}
+
+.fa-facebook {
+    $bg : #3B5998;
+    @include setIcon($bg);
+    &:hover{background-color: darken($bg, 15%);}
+}
+
+.fa-twitter {
+    $bg : #55ACEE;
+    @include setIcon($bg);
+    &:hover{background-color: darken($bg, 15%);}
+}
+
+.fa-google {
+    $bg : #dd4b39;
+    @include setIcon($bg);
+    &:hover{background-color: darken($bg, 10%);}
+}
+
+.fa-linkedin {
+    $bg : #007bb5;
+    @include setIcon($bg);
+    &:hover{background-color: darken($bg, 15%);}
+}
+
+.fa-youtube {
+    $bg : #bb0000;
+    @include setIcon($bg); 
+    &:hover{background-color: lighten($bg, 15%);}
+}
+
+.fa-instagram {
+    $bg : #a70b78;
+    @include setIcon($bg);
+    &:hover{background-color: lighten($bg, 10%);}
+}

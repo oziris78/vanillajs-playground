@@ -1,0 +1,63 @@
+
+@import "globals";
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{ // <html>
+    font-size: 20px;
+}
+
+body{
+    margin: 0 8%; // top, right, bottom, left
+    background-color: $mywhite2;
+}
+
+div#root{
+    padding: 1rem 2rem 0 2rem; // top, right, bottom, left
+    background-color: $mywhite;
+    
+}
+
+nav{
+    font-size: 3rem;
+    @include singleFlexContainer;
+    @include noSelect;
+    padding: 10px 0 50px 0;
+
+    // https://www.html-code-generator.com/css/3d-text-generator
+    color: $titleMainColor;
+    font-family: Lucida Console;
+    font-weight: bold;
+    text-shadow: 0px 0px 0 $titleColor1,
+                 1px 1px 0 $titleColor2,
+                 2px 2px 0 $titleColor3,
+                 3px 3px 0 $titleColor4,
+                 4px 4px 0 $titleColor5,
+                 5px 5px 0   $titleColor6,
+                 6px 6px 5px $titleColor7,
+                 6px 6px 1px $titleColor8,
+                 0px 0px 5px $titleColor9;
+}
+
+
+
+button#colormode{
+    position: fixed;
+    top: 15px;
+    right: 8px;
+    font-size: 0.75rem;
+    padding: 4px;
+}
+
+
+
+
+

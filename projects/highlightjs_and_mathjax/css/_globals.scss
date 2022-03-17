@@ -1,0 +1,40 @@
+
+// FROM ATOM-ONE-DARK THEME
+
+// $gri1   : #222629;
+// $acikGri : lighten($gri1, 3%);
+// $acikGri2 : lighten($gri1, 5%);
+
+$mywhite  : #EDEDED;
+$mywhite2  : darken($mywhite, 10%);
+
+
+// https://www.html-code-generator.com/css/3d-text-generator
+$titleMainColor: #3b6bdb;
+$titleColor1 : rgb(49,97,209);
+$titleColor2 : rgb(39,87,199);
+$titleColor3 : rgb(29,77,189);
+$titleColor4 : rgb(19,67,179);
+$titleColor5 : rgb(9,57,169);
+$titleColor6 : rgb(0,47,159);
+$titleColor7 : rgba(0,0,0,0.6);
+$titleColor8 : rgba(0,0,0,0.5);
+$titleColor9 : rgba(0,0,0,.2);
+
+
+@mixin singleFlexContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+@mixin noSelect{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}

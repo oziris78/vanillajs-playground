@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+span.ad, .info p{
+    line-height: 1.2rem;
+}
+
+i#at::before{
+    content: "\a";
+    white-space: pre;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVIGATION */
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,1);
+    width: 100%;
+    padding: 0 0.2rem 0.15rem 0.2rem;
+    background: linear-gradient(to left, rgb(50,50,50) 0%
+                                       , rgb(40,40,40) 20%
+                                       , rgb(30,30,30) 40%
+                                        ,rgb(20,20,20) 60%
+                                        ,rgb(10,10,10) 80%
+                                        ,rgb(0,0,0) 100%);
+    
+}
+
+#navbar ul{ 
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+#navbar ul li{ 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#navbar ul li a{ 
+    text-decoration: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color:rgba(222, 225, 228, 0.644); 
+    font-size: 0.75rem;
+}
+
+#navbar ul li a:hover{ 
+    color:rgba(222, 225, 228, 0.9); 
+    font-size: 0.8rem;
+}
+
+#navbar h1{
+    font-family: Audiowide, sans-serif;
+    font-size: 1rem;
+    width: 20%;
+    text-align: center;
+    pointer-events: none;
+    
+}
+
+#navbar h1 p{
+    display: inline-block;
+    background: linear-gradient(90deg,
+                                      rgba(45,45,45,1) 0%,
+                                      rgba(60,60,60,1) 50%,
+                                      rgba(75,75,75,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ORTA ALAN */
+
+
+.ortaAlan{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    vertical-align: center;
+    text-align: center;
+    background-image: url(../res/artalan2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+
+.ortaAlanIc{
+    margin: auto;
+    width: 75%;   /* ortaAlan ne buyuklukte gozuksun ayari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+.person{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    filter: brightness(1.0);
+}
+
+.person img{
+    width: 80%;
+    margin: 1rem auto;
+    border: 5px groove rgb(0,0,0);
+}
+
+
+.info{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    color: rgba(255,255,255,0.7);
+}
+
+
+
+/* FOOTER Kismi */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 0.5rem;
+    height: 2rem;
+    background-color: rgb(19, 19, 19);
+}
+
+footer h2{color:rgba(255, 255, 255  ,0.82)}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+footer h2{
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+footer ul li{
+    padding: 0 0.5rem;
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+
+#ikon1{color:rgb(27, 71, 216);         filter:brightness(1);    }
+#ikon2{color:rgba(66, 129, 211,1   ); filter:brightness(1);     }
+#ikon3{color:rgba(211, 35, 93 ,1  );   filter:brightness(1);     }
+#ikon4{color:rgba(201, 27, 27 ,1 );    filter:brightness(1);     }
+#ikon5{color:rgb(15, 4, 4) ,1 ;    filter:brightness(1);      }
+
+#ikon1:hover{filter:brightness(0.4);  }
+#ikon2:hover{filter:brightness(0.4);  }
+#ikon3:hover{ filter:brightness(0.4); }
+#ikon4:hover{ filter:brightness(0.4); }
+#ikon5:hover{filter:brightness(0.4);  }
+
+
+/* EK OZELLIKLER */
+
+.ad{
+    display: inline-block;
+    padding-bottom: 1rem;
+    color:rgba(255,255,255,1);
+    animation: adAnim 2s linear infinite;
+}
+
+@keyframes adAnim{
+    0%   {color:rgba(255,255,255,1);}
+    50%  {color:rgba(255,100,10,1);}
+    100%  {color:rgba(206, 84, 14, 0.8);}
+}

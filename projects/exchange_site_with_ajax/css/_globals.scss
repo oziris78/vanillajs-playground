@@ -1,0 +1,37 @@
+
+
+$yesil1 : #61892F;
+$gri1   : #222629;
+$acikGri : lighten($gri1, 3%);
+$acikGri2 : lighten($gri1, 5%);
+$beyaz  : #EDEDED;
+$koyuBeyaz  : darken($beyaz, 10%);
+
+
+%flexRow{
+    display: flex;
+    flex-direction: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+%sizeMargin{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+%noSelect{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+@mixin setIcon($color){
+    background: darken($color, 2%);    
+    color: white;
+}
+

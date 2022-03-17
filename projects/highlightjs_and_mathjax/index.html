@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Statistics Notes</title>
+
+    
+    <!-- highlight js -->
+    <link rel="stylesheet" href="imports/atom-one-light.min.css">
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-light.min.css"> -->
+
+    <!-- mathjax -->
+    <script>
+        MathJax = {
+          tex: {inlineMath: [['$', '$'], ['\\[', '\\]']]},
+          svg: {fontCache: 'global'}
+        };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+    <!-- my stuff -->
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+
+<body><div id="root"> 
+
+    <nav>İSTATİSTİK NOTLARIM</nav>
+
+    <button id="colormode">DARK MODE</button>
+
+    <div>
+        Ki kare dağılımında k sayısına "degrees of freedom" denir ve bu dağılım $\chi_{k}^{2}$
+        simgesi ile gösterilir. 
+    </div>
+    <br><br>
+    <div>
+        Probability density function'ına bakacak olursak da:
+        \[f(x) = \frac{x^{k/2 - 1} e^{-x/2}}{2^{k/2} \Gamma(k/2)} \]
+    </div>
+
+
+    <pre><code class="java">
+        public class Main{
+            public static void main(String... args){
+                double d = 1;
+                double degOfFreedom = 12;
+                double res = 1;
+                res *= Math.pow(d, degOfFreedom/2d - 1);
+                res *= Math.exp(-d / 2d);
+                res /= Math.pow(2, degOfFreedom/2d);
+                res /= gamma(degOfFreedom/2d);
+                System.out.println(res);
+            }
+        }
+    </code></pre>
+    <pre><code class="java">
+        public class Main{
+            public static void main(String... args){
+                double d = 1;
+                double degOfFreedom = 12;
+                double res = 1;
+                res *= Math.pow(d, degOfFreedom/2d - 1);
+                res *= Math.exp(-d / 2d);
+                res /= Math.pow(2, degOfFreedom/2d);
+                res /= gamma(degOfFreedom/2d);
+                System.out.println(res);
+            }
+        }
+    </code></pre>
+    
+    <!-- \[\sum_{n = 0}^{\infty} 1/n^2 = \pi ^2 / 6\]
+    \[\sum_{n = -\infty, n\neq 0}^{\infty} 1/n^2 = \pi^2/3\]
+        
+
+    
+     -->
+
+    <!-- highlight js -->
+    <script src="imports/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <!-- highlight js -->
+</div></body>
+
+</html>
+
+
+

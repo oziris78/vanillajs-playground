@@ -1,0 +1,189 @@
+@import "_globals";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color : $beyaz;
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 30px;
+    font-family: 'Share Tech', sans-serif;
+}
+
+body{
+    @extend %flexRow;
+}
+
+
+/* header part */
+
+header{
+    @extend %sizeMargin;
+    @extend %flexRow;
+    height: 8rem;
+    background: $gri1 url("../res/backPhoto.png") no-repeat left top;
+    background-size: cover;
+    font-size: 2.5rem;
+
+    #siteName{
+        @extend %noSelect;
+        color: $yesil1;
+        text-align: center;
+    }
+}
+
+
+
+/* main part */
+
+main{
+    @extend %sizeMargin;
+    @extend %flexRow;
+    padding-bottom: 2rem;
+    justify-content: space-evenly;
+    
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+       
+
+    h1{
+        @extend %noSelect;
+        width: 100%;
+        color: $yesil1;
+        margin-top: 2rem;
+        margin-bottom: -0.5rem;
+        text-align: center;
+    }
+    div.firstDiv{
+        
+        color: $yesil1;
+    }
+    
+    .col1, .col2, .col3{
+        @extend %flexRow;
+        
+        width: 30%;
+        margin: 2rem 0;
+        padding: 0.7rem;
+        div{
+            width: 100%;
+            margin: 0.2rem 0;
+            min-height: 2rem;
+            background-color: $acikGri;
+        }
+
+        
+    }
+    .col1{background-color: $gri1;}
+    .col2{background-color: $gri1;}
+    .col3{background-color: $gri1;}
+
+
+    
+    
+}
+
+span{
+    display: inline-block;
+    padding-top: 0.35rem;
+}
+
+
+.firstDiv{
+    @extend %noSelect;
+    @extend %flexRow;
+    font-size: 1.3rem;
+    background-color: $acikGri2;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 2.1rem;
+    justify-content: center;
+
+}
+
+main div div:not(.firstDiv){
+    min-height: 1.7rem;
+    color: $beyaz;
+}
+
+
+
+
+/* footer part */
+
+footer{
+    @extend %sizeMargin;
+    @extend %noSelect;
+    @extend %flexRow;
+    background-color: $gri1;
+    color: $beyaz;
+    height: auto;
+    padding: 0.72rem 0 0.72rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    ul{
+        list-style: none;
+        @extend %flexRow;
+        width: 50%;
+        li{
+            width: 14%;
+        }
+    }
+    #footerText{
+        width: 50%;
+    }
+}
+
+
+/* ICONS */
+
+.fa {
+    padding: 0.3rem;
+    width: 1.6rem;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 45%;
+}
+
+.fa-facebook {
+    $bg : #3B5998;
+    @include setIcon($bg);
+    &:hover{background-color: darken($bg, 15%);}
+}
+
+.fa-twitter {
+    $bg : #55ACEE;
+    @include setIcon($bg);
+    &:hover{background-color: darken($bg, 15%);}
+}
+
+.fa-google {
+    $bg : #dd4b39;
+    @include setIcon($bg);
+    &:hover{background-color: darken($bg, 15%);}
+}
+
+.fa-linkedin {
+    $bg : #007bb5;
+    @include setIcon($bg);
+    &:hover{background-color: darken($bg, 15%);}
+}
+
+.fa-youtube {
+    $bg : #bb0000;
+    @include setIcon($bg); 
+    &:hover{background-color: lighten($bg, 15%);}
+}
+
+.fa-instagram {
+    $bg : #a70b78;
+    @include setIcon($bg);
+    &:hover{background-color: lighten($bg, 10%);}
+}

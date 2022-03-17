@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Oğuzhan Topaloğlu">
+    <title>Responsive Yerlik 1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Telefon ve tablet css'leri  -->
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css">
+</head>
+
+<body>
+    <header class="bgDarkBlue">
+        <div class="container">
+
+            <nav id="navbar">
+                <h1 class="textCenter headingSma">Oğuzhan Topaloğlu</h1>
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#training">Alıştırmalar</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <img src="res/kermit.jpg" alt="komik kurbağa">
+        <div class="name">
+            <h2 class="headingBig">Tünerik Gezgini Çok Havalı</h2>
+            <p class="tooltip">Ben yazılım biliyorum hobaa
+                <span class="tooltiptext"></span>
+            </p>
+        </div>
+
+        <a class="btn btnPrimary" href="#courses">Kurslara git</a>
+
+    </section>
+
+
+    <section id="training" class="bgDarkBlue">
+        <h3 style="color:burlywood; padding-bottom: 20px;" class="textCenter headingMed">Eğitimler</h3>
+
+        <div class="items">
+
+            <article class="item">
+                <h3>Sınıf içi</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex reprehenderit veritatis maxime praesentium mollitia?</p>
+            </article>
+            
+            <article class="item">
+                <h3>Sınıf dışı</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex reprehenderit veritatis maxime praesentium mollitia?</p>
+            </article>
+            
+            <article class="item">
+                <h3>Uga buga afrika</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex reprehenderit veritatis maxime praesentium mollitia?</p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <footer class="bgDarkBlue" id="contact">
+        <div class="contactForm">
+            <form>   
+                <h4 class="textCenter headingMed">Bana Ulaş!</h4>
+                <div class="formGroup">
+                    <label for="name">Ad</label>
+                    <input type="text" class="formControl" name="name" id="name" placeholder="Ad">
+                </div>
+                <div class="formGroup">
+                    <label for="email">Email</label>
+                    <input type="text" class="formControl" name="email" id="email" placeholder="e-mail">
+                </div>
+                <div class="formGroup">
+                    <label for="message">Mesaj</label>
+                    <input type="text" class="formControl" name="message" id="message" placeholder="mesaj">
+                </div>
+                <button type="submit" class="btn btnBlock">Gönder</button>
+            </form>
+
+            <ul>
+                <li>
+                    <a href="#">FB</a>
+                </li>
+                <li>
+                    <a href="#">INSTA</a>
+                </li>
+                <li>
+                    <a href="#">GITHUB</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

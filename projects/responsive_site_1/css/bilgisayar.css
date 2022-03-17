@@ -1,0 +1,45 @@
+*{
+    font-size: 35px;
+
+}
+
+
+#navbar ul li a{ 
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    font-size: 0.8rem;
+}
+
+#navbar ul li a:hover{ 
+    font-size: 1rem;
+}
+
+#navbar h1{
+    font-size: 1.2rem;
+    width: 35%;
+    
+}
+
+span.ad, .info p{
+    line-height: 1rem;
+}
+
+
+.person{
+    height: 70%;
+}
+
+.person img{
+    width: 60%;
+    margin: 0.5rem auto;
+}
+
+
+.info{
+    width: 85%;
+    margin-top: -1rem;
+}
+
+.ortaAlanIc{
+    width: 80%;
+}

@@ -1,0 +1,80 @@
+/* Text */
+
+.textCenter{
+    text-align:center;
+}
+
+.headingSma{
+    font-size: 1.25rem;
+}
+
+.headingMed{
+    font-size: 1.5rem;
+}
+
+.headingBig{
+    font-size: 1.75rem;
+}
+
+
+/* Colors */
+
+.bgDarkBlue{
+    background: #062e51;
+}
+
+.bgLightBlue{
+    background: #336ea2;
+}
+
+
+/* Container */ 
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+/* Buttons */
+
+.btn{
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 1px;
+}
+
+.btnPrimary{
+    background: #336ea2;
+}
+
+.btnPrimary:hover{
+    color: #336ea2;
+    background: #fff;
+    border: 0.5px solid #336ea2;
+}
+
+.btnBlock{
+    width: 100%;
+    text-align: center;
+}
+
+/* Forms */
+
+.formGroup{
+    padding: 0.25rem 0;
+}
+
+.formGroup label{
+    display: block;
+}
+
+.formControl{
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    resize: none;
+
+}

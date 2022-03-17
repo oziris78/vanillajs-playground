@@ -1,0 +1,51 @@
+*{
+    font-size: 38px;
+
+}
+
+.ad{
+    font-size: 1rem;
+}
+
+.bgb{
+    display: inline-block;
+    margin-top: -0.5rem;
+}
+
+#navbar ul li a{ 
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    font-size: 0.8rem;
+}
+
+#navbar ul li a:hover{ 
+    font-size: 1rem;
+}
+
+#navbar h1{
+    font-size: 1.4rem;
+    width: 40%;
+    
+}
+
+span.ad, .info p{
+    line-height: 1rem;
+}
+
+
+
+
+.person img{
+    width: 40%;
+    margin: 0.5rem auto;
+}
+
+
+.info{
+    width: 85%;
+    margin-top: -1rem;
+}
+
+.ortaAlanIc{
+    width: 75%;
+}

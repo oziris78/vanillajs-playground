@@ -1,0 +1,30 @@
+
+/* General Stuff */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: bisque;
+}
+
+/* */
+
+.heart{
+    position: absolute;
+    animation: fallAnimation 3s linear infinite;
+    user-select: none;
+}
+
+@keyframes fallAnimation{
+    to{
+        transform: translateY(105vh);
+    }
+}

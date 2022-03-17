@@ -1,0 +1,14 @@
+
+
+LaTeX matematik formülleri yazmak için:
+    https://latex.codecogs.com/
+
+Demolar var bunlara bakarak inline yapmam gerekirse yardım alırım:
+    https://github.com/mathjax/MathJax-demos-web
+
+highlight js stilleri:
+    https://github.com/highlightjs/highlight.js/tree/main/src/styles
+
+
+Tommy'nin verdiği blog'da highlight js kullanılmış belki renk teması bile alınabilir:
+    http://marc-b-reynolds.github.io/distribution/2021/03/18/CheapGaussianApprox.html
