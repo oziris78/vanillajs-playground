@@ -39,6 +39,13 @@ In addition to JS, I also used HTML, CSS and SASS.
 </p>
 <br>
 
+### Shopping Site
+
+<p align="center">
+  <img src="./.repo_assets/img10.png">
+</p>s
+<br>
+
 ### Notification Effect
 
 <p align="center">

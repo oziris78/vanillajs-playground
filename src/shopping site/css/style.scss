@@ -1,0 +1,250 @@
+
+@import "globals";
+
+@import url('http://fonts.cdnfonts.com/css/roboto');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#cart-bar{
+    position: fixed;
+    overflow: hidden auto;
+    transform: scaleX(-1); //Reflects the parent horizontally
+    right: -9rem;
+    background-color: $charcoal;
+    height: 100%;
+    width: 9rem;
+    z-index: 1;
+    transition: right 750ms ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    div{
+        transform: scaleX(-1);
+    }
+
+    #results{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        transform: scaleX(1);
+        @include noSelect;
+        #your-total{
+            margin: 1.75rem 0 0.5rem 0;
+        }
+        #clear-cart{
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+    
+    #close-cart{
+        margin: 0.5rem;
+        width: 100%;
+        text-align: center;
+        color: $gainsboro;
+        &:hover{
+            color: $white;
+        }
+    }
+    
+    .cart-item{
+        display: flex;
+        margin: 0 auto;
+        padding: 0px;
+        font-size: 0.7rem;
+        @include noSelect;
+        div{
+            margin: 0.1rem;
+            color: $gainsboro;
+        }
+        img{
+            @include noSelect;
+            margin: auto 0.8rem;
+            margin-left: 0;
+            width: 64px;
+            height: 64px;
+        }
+        .cart-item-middle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0rem 0.6rem;
+            margin-left: 0rem;
+
+            .cart-item-name{
+                color: $white;
+            }
+            .cart-item-price{
+                color: $gainsboro;
+            }
+            .cart-item-remove{
+                font-size: 0.5rem;
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+        .cart-item-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .cart-item-increase{
+                &:hover{
+                    color: $red;
+                }
+            }
+            .cart-item-count{
+                color: $light-steel-blue;
+            }
+            .cart-item-decrease{
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+nav{
+    padding: 0.6rem 0rem;
+    background-color: $eerie-black;
+    color: $gainsboro;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    @include noSelect;
+    
+    #left-menu{
+        font-size: 1.25rem;
+        &:hover{
+            color: $white;
+        }
+    }
+    #twistral-goods{
+        font-size: 1.1rem;
+        &:hover{
+            color: $white;
+        }
+    }
+
+    #shopping-cart{
+        line-height: 0;
+        img{
+            filter: invert(0.75);
+            &:hover{
+                filter: invert(1.0);
+            }
+        }
+    }
+}
+
+
+main {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .item{
+        background-color: $eerie-black;
+        // margin: 1rem;
+        margin: 1rem 0 1rem 1rem;
+        width: 8rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        @include noSelect;
+        
+        img{
+            @include noSelect;
+            margin: 1rem 0 0.5rem 0rem;
+            height: 180px;
+            width: 180px;
+        }
+        .vegetable-name{
+            color: $cadet-blue;
+            margin: 0.2rem;
+        }
+        .vegetable-price{
+            font-size: 0.8rem;
+            color: $light-steel-blue;
+            margin: 0.2rem;
+        }
+        .add-to-cart{
+            color: $gainsboro;
+            margin: 0.2rem 0rem 0.7rem 0rem;
+            &:hover{
+                color: $white;
+            }
+            &:active{
+                color: $red;
+            }
+        }
+
+    }
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.25rem 0;
+    @include noSelect;
+    background-color: $eerie-black;
+
+    h3{
+        color: $gainsboro;
+        &:hover{
+            color: $white;
+        }
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        li{
+            padding: 0 0.5rem;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    .social-media{
+        color: $gainsboro;
+        
+        &:hover{
+            color: $white;
+        }
+    }
+}
+
+

@@ -1,0 +1,19 @@
+
+
+$white: #ffffff;
+$red: #ff0000;
+
+$gainsboro: #d8dbe2ff;
+$light-steel-blue: #a9bcd0ff;
+$cadet-blue: #58a4b0ff;
+$charcoal: #373f51ff;
+$eerie-black: #1b1b1eff;
+
+
+@mixin noSelect {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
