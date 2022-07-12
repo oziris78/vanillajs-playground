@@ -1,2 +1,3 @@
 # no gitignore needed for now
 *.lnk
+.sass-cache
